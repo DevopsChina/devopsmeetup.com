@@ -1,0 +1,55 @@
+<head>
+  <meta charset="utf-8" />
+  {{- with .Title | default .Site.Title }}
+  <title>{{ . }} - {{ $.Site.Params.description }}</title>
+  <meta name="description" content="{{ $.Site.Params.description }}" />
+  <meta property="og:title" content="{{ . }}" />
+  <meta name="twitter:title" content="{{ . | truncate 70 }}" />
+  {{- end }} 
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <meta
+    name="description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}"
+  />
+  {{ with .Site.Params.author }}
+  <meta name="author" content="{{ . }}" />
+  {{ end }} {{ hugo.Generator }} 
+  {{ "<!-- plugins -->" | safeHTML }}
+  <noscript>
+    {{ range .Site.Params.plugins.css }}
+    <link rel="stylesheet" href="{{ .URL | absURL }} " />
+    {{ end }}
+  </noscript>
+
+  {{ "<!-- Main Stylesheet -->  " | safeHTML }} {{ $styles := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ $styles.Permalink }}"
+    integrity="{{ $styles.Data.Integrity }}"
+    media="screen"
+  />
+
+  {{ "<!--Favicon-->" | safeHTML }} 
+  
+  <link rel="shortcut icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon"> <link rel="icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-159133967-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-159133967-1");
+  </script>
+</head>

@@ -1,0 +1,5 @@
+filterList:
+  - filterType: "年会"
+  - filterType: "比赛"
+  - filterType: "Meetup"
+  - filterType: "工作坊"

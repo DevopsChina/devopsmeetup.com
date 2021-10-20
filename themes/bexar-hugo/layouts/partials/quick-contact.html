@@ -1,0 +1,19 @@
+{{ if .Site.Params.quickContact.enable }}
+{{ "<!-- quick contact -->" | safeHTML }}
+<div class="bg-white px-4 py-5 box-shadow mb-5">
+  <h4 class="mb-4">联系社区</h4>
+  <form action="https://formspree.io/info@devopschina.org" method="POST">
+    <input type="text" name="name" id="name" class="form-control form-control-sm border-0 rounded-0 box-shadow mb-3"
+      placeholder="姓名">
+    <input type="email" name="mail" id="mail" class="form-control form-control-sm border-0 rounded-0 box-shadow mb-3"
+      placeholder="Email">
+    <input type="text" name="phone" id="phone" class="form-control form-control-sm border-0 rounded-0 box-shadow mb-3"
+      placeholder="手机">
+    <input type="text" name="subject" id="subject" class="form-control form-control-sm border-0 rounded-0 box-shadow mb-3"
+      placeholder="主题">
+    <textarea name="message" id="message" class="form-control form-control-sm border-0 rounded-0 box-shadow mb-3 py-3 px-4"
+      placeholder="垂询信息"></textarea>
+    <button type="submit" value="send" class="btn btn-primary">提交</button>
+  </form>
+</div>
+{{ end }}

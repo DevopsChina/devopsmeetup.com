@@ -1,0 +1,212 @@
+baseURL = "https://devopschina.org/"
+hasCJKLanguage = true
+languageCode = "zh-cn"
+title = "中国 DevOps 社区"
+theme = "bexar-hugo"
+summaryLength = "70"
+paginate = 10
+
+[outputs]
+  home = ["HTML", "AMP", "RSS", "JSON"]
+  page = ["HTML"]
+
+[params.quickContact]
+  enable = true
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/fontawesome/font-awesome.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/animate/animate.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  #[[params.plugins.js]]
+  #URL = "plugins/google-map/gmap.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/modernizer/modernizr.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/mixitup/mixitup.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+
+# navigation
+[menu]
+
+  [[menu.main]]
+  name = "活动"
+  URL = "/event/index.html"
+  weight = 2
+
+  [[menu.main]]
+  name = "博客"
+  URL = "/blog/index.html"
+  weight = 3
+
+  [[menu.main]]
+  name = "团队"
+  URL = "/team/index.html"
+  weight = 4
+
+  [[menu.main]]
+  name = "关于"
+  URL = "/about/index.html"
+  weight = 5
+
+
+[params]
+logo = "images/logo.png"
+logoAlt = "images/logo-alt.png"
+home = "首页"
+# Meta data
+description = "中国 DevOps 社区官方网站"
+author = "中国 DevOps 社区"
+# google map
+#gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+#mapLatitude = "51.5223477"
+#mapLongitude = "-0.1622023"
+#mapMarker = "images/marker.png"
+# Google Analitycs
+#googleAnalitycsID = "UA-159133967-1"
+# mailchimp subsciption
+#mailchimpFormAction = "https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece2732a6e9925f2e70a61&amp;id=b1e227529e" # replace this url with yours
+#mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code with yours
+
+  # Preloader
+  [params.preloader]
+  enable = true
+
+  # top header
+  [params.topHeader]
+  enable = false
+  email = "info@devopschina.org"
+  phone = "13911813646"
+    # social icon
+    [[params.topHeader.icon]]
+      icon = "fa-weibo"
+      URL = "https://weibo.cn/awsfaq/"
+    [[params.topHeader.icon]]
+      icon = "fa-twitter"
+      URL = "https://twitter.com/devopscn"
+    [[params.topHeader.icon]]
+      icon = "fa-gitlab"
+      URL = "https://gitlab.com/devopschina/"
+    [[params.topHeader.icon]]
+      icon = "fa-linkedin"
+      URL = "https://www.linkedin.com/company/devops-china/"
+    [[params.topHeader.icon]]
+      icon = "fa-gihub"
+      URL = "https://github.com/devopschina/"
+
+  # search
+  [params.search]
+  enable = false
+
+  # Navigation get start button
+  [params.navBtn]
+  enable = true
+  btnText = "活动报名"
+  URL = "https://www.hdb.com/u/bqaf3u.html"
+
+  # call to action
+  [params.cta]
+  enable = true
+  title = "价值观：开放、专业、使命感"
+  bgImage = "images/backgrounds/cta-lg.webp"
+  bgImageAlt = "images/backgrounds/cta-lg.jpg"
+  btnText = "加入我们"
+  URL = "http://qdsdip9cahkumlol.mikecrm.com/NwWwOdh"
+
+  # Footer
+  [params.footer]
+  content = "中国 DevOps 社区在全国的18个城市定期举办 Meetup 活动，社区年会举办年度峰会，每个月举办两次线上技术分享交流活动。我们致力于通过打造最优的线下交流社区，推动 DevOps 运动在国内的发展。"
+
+    # follow us on social site
+    [params.footer.followUs]
+    title = "关注我们"
+
+      [[params.footer.followUs.socialIcon]]
+      icon = "fa-weibo"
+      URL = "https://weibo.cn/awsfaq/"
+
+      [[params.footer.followUs.socialIcon]]
+      icon = "fa-twitter"
+      URL = "https://twitter.com/devopscn"
+
+      [[params.footer.followUs.socialIcon]]
+      icon = "fa-linkedin"
+      URL = "https://www.linkedin.com/company/devops-china/"
+
+      [[params.footer.followUs.socialIcon]]
+      icon = "fa-meetup"
+      URL = "https://www.meetup.com/china-devops/"
+
+      [[params.footer.followUs.socialIcon]]
+      icon = "fa-gitlab"
+      URL = "https://gitlab.com/devopschina/"
+
+    # Service
+    [params.footer.service]
+    title = "导航"
+
+      [[params.footer.service.serviceList]]
+      title = "首页"
+      URL = "/index.html"
+
+      [[params.footer.service.serviceList]]
+      title = "关于"
+      URL = "/about/index.html"
+
+      [[params.footer.service.serviceList]]
+      title = "博客"
+      URL = "/blog/index.html"
+    
+      [[params.footer.service.serviceList]]
+      title = "Pipeline Craft"
+      URL = "http://pipeline.devopsmeetup.com"
+
+      [[params.footer.service.serviceList]]
+      title = "社区B站"
+      URL = "https://space.bilibili.com/370989874"
+
+    # Contact
+    [params.footer.contact]
+    title = "联系信息"
+
+      [[params.footer.contact.contactList]]
+      listItem = "微信订阅号: DevOpsMeetup"
+
+      [[params.footer.contact.contactList]]
+      listItem = "微信服务号: DevOpsChina"
+
+      [[params.footer.contact.contactList]]
+      listItem = "邮件：info@devopsChina.org"
+
+  # newsletter
+  [params.newsletter]
+  enable = false
+  title = "订阅更新"
+
+  # copyright
+  [params.copyright]
+  copyright = "中国 DevOps 社区  |"

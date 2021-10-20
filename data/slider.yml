@@ -1,0 +1,47 @@
+slider:
+  enable : true
+sliderItem: 
+  - preTitle : "欢迎加入"
+    title : "中国DevOps社区"
+    shortDescription : "IT环境并不容乐观，DevOps是一组很有意义的最佳实践集合，希望它的作用能被更多人意识到，希望已经上路的人都可以加速度的进化。"
+    bgImage : "images/slider/banner-2.webp"
+    bgImageAlt : "images/slider/banner-2.jpg"
+    animation : "fadeInUp"
+    button:
+      enable : ture
+      btnText : "关于社区"
+      URL : "/about"
+      animation : "zoomIn"
+      
+  - preTitle : "中国DevOps社区"
+    title : "年度社区盛会即将启动"
+    shortDescription : "一年一度的盛会，2020年即将在大连站拉开帷幕。"
+    bgImage : "images/slider/banner-1.webp"
+    bgImageAlt : "images/slider/banner-1.jpg"
+    animation : "fadeInDown"
+    button:
+      enable : false
+      btnText : "注册入口"
+      URL : "https://www.hdb.com/party/js53a.html"
+      animation : "zoomIn"
+
+# banner feature
+feature :
+  enable : ture
+  # Max use 4 item
+  featureItem :
+    - title : "敏捷开发"
+      icon : "fa-diamond"
+      description : "在产品的计划、需求、设计和开发阶段主要采用敏捷开发方法论。在这些阶段中DevOps强调，设置合理的任务大小，从而确保能够开展快速迭代和开发；强调持续集成的实施，通过CI提高软件的质量和可用性；强调用更短的发布周期，增强反馈的数量和频度。"
+      
+    - title : "持续交付"
+      icon : "fa-bar-chart"
+      description : "在开发和部署运营阶段采用持续交付的方法自动化软件系统的发布、变更和升级等工作。DevOps强调使用持续交付工具作为基础架构尽可能的自动化手工部署工作。在研发阶段就开始设计部署自动化的脚本，对其使用流水线工具来操作执行，并辅助自动化测试工具。"
+      
+    - title : "ITIL/ITSM管理"
+      icon : "fa-lightbulb-o"
+      description : "DevOps强调从传统的ITSM管理理念上升到关注业务持续性的轻量ITSM管理方法。运维人员在项目的早期要和开发、测试和部署人员充分地沟通和落实运维需求。确保在业务系统开发的初期，系统的业务持续性和可运维性等非功能性需求，都得到充分的落实"
+      
+    - title : "精益管理"
+      icon : "fa-dashboard"
+      description : "业务开发运维的整个生命周期中，以上三类工作实践的所有工作活动中，都必须坚持贯彻精益的原则。DevOps特别强调的点包括：准时制业务流程、精益且无浪费的工作方法、单件流的运作流程、持续改进等。它的这些管理思路需要严格的落实到所有工作环节中。"

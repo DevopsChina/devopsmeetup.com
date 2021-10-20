@@ -1,0 +1,33 @@
+philosophy:
+  enable: true
+  philosophyItem:
+    - title: "社区使命"
+      serialNumber: "01"
+      content: "肩负重大使命"
+      list:
+        - listItem: "传播DevOps文化"
+        - listItem: "落地DevOps实践"
+
+    - title: "社区愿景"
+      serialNumber: "02"
+      content: "心怀美好愿景"
+      list:
+        - listItem: "成为中国DevOps运动的领航人"
+        - listItem: "成为中国DevOps社区的催化者"
+
+    - title: "社区价值观"
+      serialNumber: "03"
+      content: "共同正道成功"
+      list:
+        - listItem: "开放"
+        - listItem: "专业"
+        - listItem: "使命感"
+
+about:
+  enable: false
+
+service:
+  enable: false
+
+team:
+  enable: false

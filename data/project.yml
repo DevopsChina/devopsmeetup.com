@@ -1,0 +1,5 @@
+filterList:
+  - filterType: "Summit"
+  - filterType: "Meetup"
+  - filterType: "Webinar"
+  - filterType: "Hackathon"
