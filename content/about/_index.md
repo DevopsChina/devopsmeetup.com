@@ -6,7 +6,7 @@ bgImage: "images/backgrounds/page-title.webp"
 bgImageAlt: "images/backgrounds/about-title.jpg"
 ---
 
-### 社区价值观简介
+### 社区价值观
 
 ---
 
